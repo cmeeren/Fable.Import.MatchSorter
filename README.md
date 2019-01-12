@@ -1,6 +1,6 @@
 # Fable.Import.MatchSorter
 
-This package provides Fable bindings for [match-sorter ](https://github.com/kentcdodds/match-sorter/).
+This package provides Fable bindings for [match-sorter](https://github.com/kentcdodds/match-sorter/).
 
 ## Installation
 
