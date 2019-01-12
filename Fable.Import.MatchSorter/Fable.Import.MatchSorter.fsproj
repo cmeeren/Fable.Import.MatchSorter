@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Fable bindings for match-sorter 2.3.</Description>
+    <PackageProjectUrl>https://github.com/cmeeren/Fable.Import.MatchSorter</PackageProjectUrl>
+    <PackageId>Fable.Import.MatchSorter</PackageId>
+    <Authors>Christer van der Meeren</Authors>
+    <PackageLicenseUrl>https://github.com/cmeeren/Fable.Import.MatchSorter/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>f# fable bindings</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Bindings.fs" />
+    <Content Include="*.fsproj; *.fs" PackagePath="fable\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>
