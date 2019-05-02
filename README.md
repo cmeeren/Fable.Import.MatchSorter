@@ -55,6 +55,10 @@ You can also access the “native” match-sorter bindings in the `Native` submo
 Changelog
 ---------
 
+#### 1.1.0 (2019-05-02)
+
+- Updated for Fable.Core 3 and match-sorter 3. No API changes.
+
 #### 1.0.0 (2019-01-12)
 
 * Initial release
