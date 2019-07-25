@@ -57,7 +57,7 @@ Changelog
 
 #### 1.1.1 (2019-07-25)
 
-- Added [femto](https://github.com/Zaid-Ajaj/Femto/) compatibility
+- Added [femto](https://github.com/Zaid-Ajaj/Femto/) support
 - Updated for match-sorter 4 (no API changes)
 
 #### 1.1.0 (2019-05-02)
@@ -73,5 +73,6 @@ Changelog
 1. Make necessary changes to the code
 2. Update the changelog
 3. Update the version and release notes in the package info
-4. Commit and tag the commit (this is what triggers deployment from  AppVeyor). For consistency, the tag should ideally be in the format `v1.2.3`.
-5. Push the changes and the tag to the repo. If AppVeyor build succeeds, the package is automatically published to NuGet.
+4. Update the supported npm dependency versions for femto in the fsproj
+5. Commit and tag the commit (this is what triggers deployment from  AppVeyor). For consistency, the tag should ideally be in the format `v1.2.3`.
+6. Push the changes and the tag to the repo. If AppVeyor build succeeds, the package is automatically published to NuGet.
