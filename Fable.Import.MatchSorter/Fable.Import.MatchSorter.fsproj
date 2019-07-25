@@ -3,18 +3,23 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>Fable bindings for match-sorter 3.0.</Description>
+    <Description>Fable bindings for match-sorter.</Description>
     <PackageProjectUrl>https://github.com/cmeeren/Fable.Import.MatchSorter</PackageProjectUrl>
     <PackageId>Fable.Import.MatchSorter</PackageId>
     <Authors>Christer van der Meeren</Authors>
     <PackageLicenseUrl>https://github.com/cmeeren/Fable.Import.MatchSorter/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTags>f# fable bindings</PackageTags>
-    <PackageReleaseNotes>Updated for Fable.Core 3 and MatchSorter 3. No API changes.</PackageReleaseNotes>
-    <Version>1.1.0</Version>
+    <PackageReleaseNotes>Added femto compatibility and updated for match-sorter 4.0 (no API changes).</PackageReleaseNotes>
+    <Version>1.1.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Bindings.fs" />
     <Content Include="*.fsproj; *.fs" PackagePath="fable\" />
   </ItemGroup>
+  <PropertyGroup>
+    <NpmDependencies>
+      <NpmPackage Name="match-sorter" Version="gte 3.0 lt 5" ResolutionStrategy="max" />
+    </NpmDependencies>
+  </PropertyGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
